@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Music | Heavily Invested</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #000000;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+
+    .music-page {
+      width: min(1200px, 90%);
+      margin: 0 auto;
+      padding: 70px 0;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin: 0 0 50px;
+    }
+
+    .album-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+
+    .album {
+      text-decoration: none;
+      color: #ffffff;
+      display: block;
+    }
+
+    .album img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.2s ease;
+    }
+
+    .album:hover img {
+      transform: scale(1.03);
+    }
+
+    .album-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 14px 0 5px;
+    }
+
+    .artist {
+      font-size: 15px;
+      color: #aaaaaa;
+      margin: 0;
+    }
+
+    @media (max-width: 800px) {
+      .album-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 450px) {
+      .album-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <main class="music-page">
+
+    <h1>Music</h1>
+
+    <div class="album-grid">
+
+
+      <!-- ALBUM 1 -->
+      <a
+        class="album"
+        href="https://example.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="/album1.jpg" alt="Album 1">
+
+        <p class="album-title">Album Title 1</p>
+        <p class="artist">Artist 1</p>
+      </a>
+
+
+      <!-- ALBUM 2 -->
+      <a
+        class="album"
+        href="https://example.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="/album2.jpg" alt="Album 2">
+
+        <p class="album-title">Album Title 2</p>
+        <p class="artist">Artist 2</p>
+      </a>
+
+
+      <!-- ALBUM 3 -->
+      <a
+        class="album"
+        href="https://example.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="/album3.jpg" alt="Album 3">
+
+        <p class="album-title">Album Title 3</p>
+        <p class="artist">Artist 3</p>
+      </a>
+
+
+      <!-- ALBUM 4 -->
+      <a
+        class="album"
+        href="https://example.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="/album4.jpg" alt="Album 4">
+
+        <p class="album-title">Album Title 4</p>
+        <p class="artist">Artist 4</p>
+      </a>
+
+
+    </div>
+
+  </main>
+
+</body>
+</html>
